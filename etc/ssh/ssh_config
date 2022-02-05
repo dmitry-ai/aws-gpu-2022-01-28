@@ -3,10 +3,20 @@ Host *
 	HashKnownHosts yes
 	SendEnv LANG LC_*
 	# 2022-02-06 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
-    # «Sets a timeout interval in seconds
+    # 1) "Implement the `ubuntu-initial.sh` script from `fastai/fastsetup`":
+    # https://github.com/dmitry-ai/aws-gpu-2022-01-28/issues/1
+    # 2) «Sets a timeout interval in seconds
     # after which if no data has been received from the server,
     # ssh(1) will send a message through the encrypted channel to request a response from the server.
     # The default is 0, indicating that these messages will not be sent to the server.»
 	# http://man.openbsd.org/ssh_config#ServerAliveInterval
 	ServerAliveInterval 60
 	StrictHostKeyChecking no
+# 2022-02-06 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# "Implement the `ubuntu-initial.sh` script from `fastai/fastsetup`": https://github.com/dmitry-ai/aws-gpu-2022-01-28/issues/1
+Host github.com
+    Hostname github.com
+    IdentitiesOnly yes
+    Port 22
+    TCPKeepAlive yes
+    User git
