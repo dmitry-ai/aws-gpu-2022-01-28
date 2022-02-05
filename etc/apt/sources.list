@@ -55,3 +55,9 @@ deb http://security.ubuntu.com/ubuntu bionic-security universe
 # deb-src http://security.ubuntu.com/ubuntu bionic-security universe
 deb http://security.ubuntu.com/ubuntu bionic-security multiverse
 # deb-src http://security.ubuntu.com/ubuntu bionic-security multiverse
+
+# 2022-02-05 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# 1) Implement the `ubuntu-initial.sh` script from `fastai/fastsetup`: https://github.com/dmitry-ai/aws-gpu-2022-01-28/issues/1
+# 2) https://github.com/fastai/fastsetup/blob/d1abec10/ubuntu-initial.sh#L42-L46
+deb https://cli.github.com/packages bionic main
+deb http://ppa.launchpad.net/apt-fast/stable/ubuntu bionic main
