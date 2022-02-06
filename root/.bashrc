@@ -98,6 +98,7 @@ fi
 #    . /etc/bash_completion
 #fi
 
+# 2022-02-06 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/root/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
